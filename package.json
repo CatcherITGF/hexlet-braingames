@@ -1,0 +1,30 @@
+{
+  "name": "project-lvl1-s124",
+  "version": "1.0.0",
+  "description": "Another Brain Game application from Hexlet online school",
+  "main": "index.js",
+  "scripts": {
+    "babel-node": "babel-node",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublish": "npm run build"
+  },
+  "bin": {
+    "brain-games": "dist/bin/brain-games.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snupt/project-lvl1-s124.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snupt/project-lvl1-s124/issues"
+  },
+  "homepage": "https://github.com/snupt/project-lvl1-s124#readme",
+  "devDependencies": {
+    "babel-cli": "",
+    "babel-core": "",
+    "babel-preset-env": "",
+    "babel-preset-stage-0": ""
+  }
+}
