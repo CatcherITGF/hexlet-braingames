@@ -15,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/snupt/project-lvl1-s124.git"
   },
-  "author": "",
+  "author": "Dmitriy Khraponov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/snupt/project-lvl1-s124/issues"
@@ -26,5 +26,8 @@
     "babel-core": "",
     "babel-preset-env": "",
     "babel-preset-stage-0": ""
+  },
+  "dependencies": {
+    "readline-sync": ""
   }
 }
