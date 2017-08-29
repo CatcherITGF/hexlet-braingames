@@ -1,10 +1,7 @@
-#!/usr/bin/env node
 import readlineSync from 'readline-sync';
 
-const userName = () => {
+export const makeWelcome = () => {
   console.log('Welcome to the Brain Games!\n');
-  const actual = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${actual}!`);
+  const username = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${username}!`);
 };
-
-export default userName;
