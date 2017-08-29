@@ -4,9 +4,13 @@
   "description": "Another Brain Game application from Hexlet online school",
   "main": "index.js",
   "scripts": {
+    "test": "jest",
     "babel-node": "babel-node",
+    "flow": "flow",
+    "flow-typed": "flow-typed",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "eslint": "eslint"
   },
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
@@ -21,13 +25,23 @@
     "url": "https://github.com/snupt/project-lvl1-s124/issues"
   },
   "homepage": "https://github.com/snupt/project-lvl1-s124#readme",
+  "dependencies": {
+    "readline-sync": ""
+  },
   "devDependencies": {
     "babel-cli": "",
     "babel-core": "",
+    "babel-eslint": "",
     "babel-preset-env": "",
-    "babel-preset-stage-0": ""
-  },
-  "dependencies": {
-    "readline-sync": ""
+    "babel-preset-flow": "",
+    "babel-preset-stage-0": "",
+    "eslint": "",
+    "eslint-config-airbnb-base": "^11.3.2",
+    "eslint-plugin-flowtype": "",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jest": "",
+    "flow-bin": "^0.49.1",
+    "flow-typed": "",
+    "jest": "^20"
   }
 }
