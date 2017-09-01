@@ -3,7 +3,7 @@ import readlineSync from 'readline-sync';
 const getUsername = () => readlineSync.question('\nMay I have your name? ');
 const getAnswer = () => readlineSync.question('Your answer: ');
 
-const buildGame = (rules, askQuestion, getCorrectAnswer, numberOfRounds) => {
+const buildGame = (rules, askQuestion, getCorrectAnswer) => {
   console.log('\nWelcome to the Brain Games!');
   console.log(rules);
   const username = getUsername();
@@ -26,6 +26,7 @@ const buildGame = (rules, askQuestion, getCorrectAnswer, numberOfRounds) => {
     }
   };
 
+  const numberOfRounds = 3;
   startRound(numberOfRounds);
 };
 
