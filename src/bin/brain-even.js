@@ -1,10 +1,4 @@
 #!/usr/bin/env node
-import buildGame from '..';
-import {
-  rules,
-  makeRandomRange,
-  getCorrectAnswer,
-  numberOfRounds,
-} from '../games/even';
+import startGame from '../games/even';
 
-buildGame(rules, makeRandomRange, getCorrectAnswer, numberOfRounds);
+startGame();
