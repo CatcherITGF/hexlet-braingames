@@ -1,21 +1,32 @@
+import { cons } from 'hexlet-pairs';
 import buildGame from '..';
 import makeRandomNumber from '../random-number';
 
 const rules = 'What is the result of the expression?';
 
-const makeRandomOperator = () => {
-  let text = '';
+const makeRandomOper = () => {
   const possible = '+-*';
-  for (let i = 0; i < 1; i += 1) {
-    text += possible.charAt(Math.floor(Math.random() * possible.length));
-  }
-  return text;
+  return possible.charAt(Math.floor(Math.random() * possible.length));
 };
 
-const makeCalculation = () => `${makeRandomNumber()} ${makeRandomOperator()} ${makeRandomNumber()}`;
+const makeQA = () => {
+  const num1 = makeRandomNumber();
+  const num2 = makeRandomNumber();
+  const oper = makeRandomOper();
 
-const getCorrectAnswer = expression => String(eval(expression)); // eslint-disable-line
+  const question = `${num1} ${oper} ${num2}`;
+  let answer = '';
 
-const startGame = () => buildGame(rules, makeCalculation, getCorrectAnswer);
+  switch (oper) {
+    case '+': answer = num1 + num2; break;
+    case '-' : answer = num1 - num2; break;
+    case '*' : answer = num1 * num2; break;
+    default: answer = null;
+  }
+
+  return cons(question, answer);
+};
+
+const startGame = () => buildGame(rules, makeQA);
 
 export default startGame;
