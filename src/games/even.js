@@ -1,13 +1,13 @@
 import { cons } from 'hexlet-pairs';
 import buildGame from '..';
-import makeRandomNumber from '../random-number';
+import makeRandomInt from '../random-integer';
 
 const rules = 'Answer "yes" if number even otherwise answer "no".';
 
 const isEvenOrOdd = num => (num % 2 === 0 ? 'yes' : 'no');
 
 const makeQA = () => {
-  const question = makeRandomNumber();
+  const question = makeRandomInt();
   const answer = isEvenOrOdd(question);
 
   return cons(question, answer);

@@ -1,6 +1,6 @@
 import { cons } from 'hexlet-pairs';
 import buildGame from '..';
-import makeRandomNumber from '../random-number';
+import makeRandomInt from '../random-integer';
 
 const rules = 'What is the result of the expression?';
 
@@ -10,8 +10,8 @@ const makeRandomOper = () => {
 };
 
 const makeQA = () => {
-  const num1 = makeRandomNumber();
-  const num2 = makeRandomNumber();
+  const num1 = makeRandomInt();
+  const num2 = makeRandomInt();
   const oper = makeRandomOper();
 
   const question = `${num1} ${oper} ${num2}`;
@@ -21,7 +21,7 @@ const makeQA = () => {
     case '+': answer = num1 + num2; break;
     case '-' : answer = num1 - num2; break;
     case '*' : answer = num1 * num2; break;
-    default: answer = null;
+    default: answer = '';
   }
 
   return cons(question, answer);
