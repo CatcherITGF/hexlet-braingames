@@ -1,6 +1,6 @@
 {
   "name": "project-lvl1-s124",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Another Brain Game application from Hexlet online school",
   "main": "index.js",
   "scripts": {
@@ -28,7 +28,8 @@
   },
   "homepage": "https://github.com/snupt/project-lvl1-s124#readme",
   "dependencies": {
-    "readline-sync": ""
+    "readline-sync": "",
+    "hexlet-pairs": ""
   },
   "devDependencies": {
     "babel-cli": "",
