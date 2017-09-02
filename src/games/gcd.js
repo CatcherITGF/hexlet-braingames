@@ -13,8 +13,8 @@ const gcd = (num1, num2) => {
 };
 
 const makeQA = () => {
-  const num1 = makeRandomInt();
-  const num2 = makeRandomInt();
+  const num1 = makeRandomInt(1, 99);
+  const num2 = makeRandomInt(1, 99);
 
   const question = `${num1}, ${num2}`;
   const answer = gcd(num1, num2);
