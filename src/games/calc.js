@@ -15,13 +15,13 @@ const makeQA = () => {
   const oper = makeRandomOper();
 
   const question = `${num1} ${oper} ${num2}`;
-  let answer = null;
+  let answer = '';
 
   switch (oper) {
     case '+': answer = num1 + num2; break;
-    case '-' : answer = num1 - num2; break;
-    case '*' : answer = num1 * num2; break;
-    default: answer = null;
+    case '-': answer = num1 - num2; break;
+    case '*': answer = num1 * num2; break;
+    default: // do nothing
   }
 
   return cons(question, answer);
