@@ -13,7 +13,7 @@ const isPrime = (num) => {
 
 const makeQA = () => {
   const question = makeRandomInt(1, 99);
-  const getAnswer = () => isPrime(question) ? 'yes' : 'no';
+  const getAnswer = () => (isPrime(question) ? 'yes' : 'no');
   const answer = getAnswer();
 
   return cons(question, answer);
