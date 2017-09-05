@@ -10,12 +10,12 @@ const makeProgression = (a, d, hide) => {
   let question = '';
   let answer = '';
   for (let i = 1; i <= 10; i += 1) {
-    const buildString = getN(i, a, d);
+    const str = getN(i, a, d);
     if (i === hide) {
       question += '.. ';
-      answer = buildString;
+      answer = str;
     } else {
-      question += `${buildString} `;
+      question += `${str} `;
     }
   }
   question = question.slice(0, -1);
