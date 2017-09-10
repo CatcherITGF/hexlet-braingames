@@ -42,13 +42,13 @@
     "babel-preset-env": "",
     "babel-preset-flow": "",
     "babel-preset-stage-0": "",
-    "eslint": "",
-    "eslint-config-airbnb-base": "^11.3.2",
+    "eslint": "^4.6.0",
+    "eslint-config-airbnb-base": "",
     "eslint-plugin-flowtype": "",
-    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-import": "",
     "eslint-plugin-jest": "",
-    "flow-bin": "^0.49.1",
+    "flow-bin": "",
     "flow-typed": "",
-    "jest": "^20"
+    "jest": ""
   }
 }
